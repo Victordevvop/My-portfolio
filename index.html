@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Portfolio</title>
+    <meta name="description" content="Personal Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+
+    <header class="navbar glass-nav">
+        <div class="nav-content">
+            <a href="#" class="logo-image-wrapper">
+                <img src="public/WEB DEVELOPER.jpeg" alt="TV Logo" class="nav-logo-img">
+                <span class="logo-text">TV</span>
+            </a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                <i class="fas fa-moon dark-icon"></i>
+                <i class="fas fa-sun light-icon"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="section-block active">
+            <div class="profile-card glass">
+                <div class="profile-img-container">
+                    <div class="profile-img-wrapper">
+                        <img src="public/WEB DEVELOPER.jpeg" alt="Taiwo Victor - Profile Picture" id="profile-pic">
+                    </div>
+                </div>
+                <h1 class="name">Hi, I'm <span class="highlight">Taiwo Victor</span></h1>
+                <p class="title">Full Stack Developer - Laravel, Node.js, React</p>
+                <p class="bio">Welcome to my digital space. I specialize in building robust full-stack applications with
+                    modern web technologies. Let's connect!</p>
+
+                <div class="social-links">
+
+                    <a href="mailto:vtaiwo2425a3431csc@stu.cu.edu.ng" class="social-btn email" aria-label="Email Me">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_taiwovictor?igsh=YzljYTk1ODg3Zg==" target="_blank"
+                        class="social-btn instagram" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/2348107552564?text=Hi%20Taiwo%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+                        target="_blank" class="social-btn whatsapp" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~016cbde9963733c325" target="_blank"
+                        class="social-btn upwork" aria-label="Upwork">
+                        <svg viewBox="0 0 24 24" width="24" height="24" class="custom-icon">
+                            <path fill="currentColor"
+                                d="M17.4,14.04c-1.3,0-2.39-0.56-3.23-1.48l-1.39,2.83l-0.34-0.19l1.24-2.58C13.06,11.58,12.6,10.23,12.6,8.71V2h-2.3v6.71 c0,1.96-1.59,3.56-3.56,3.56c-1.96,0-3.56-1.59-3.56-3.56V2H0.88v6.71c0,3.23,2.63,5.86,5.86,5.86c3.23,0,5.86-2.63,5.86-5.86v-0.62 l1.77,3.61l-3.37,6.85h3.18l1.45-2.95c0.55,0.47,1.25,0.76,2.02,0.76c1.7,0,3.08-1.38,3.08-3.08C20.73,15.2,19.26,14.04,17.4,14.04z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Victordevvop" target="_blank" class="social-btn github"
+                        aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://x.com/DevVictorT" target="_blank" class="social-btn x-twitter"
+                        aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-block">
+            <div class="glass">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                            <span class="skill-pill"><i class="fa-brands fa-react"></i> React</span>
+                            <span class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                            <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="skill-pill"><i class="fas fa-database"></i> MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Software</h3>
+                        <div class="skill-tags">
+                            <span class="skill-pill"><i class="fa-brands fa-microsoft"></i> Microsoft Office</span>
+                            <span class="skill-pill"><i class="fas fa-desktop"></i> PowerPoint (PPT)</span>
+                            <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-block">
+            <div class="glass">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>MLM Platform</h3>
+                        <p>A comprehensive Multi-Level Marketing system with complex commission structures and user
+                            hierarchies.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span><span>React</span><span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>LMS Platform</h3>
+                        <p>A feature-rich Learning Management System for course delivery, student tracking, and
+                            assessments.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span><span>React</span><span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Dating Platform</h3>
+                        <p>An interactive, real-time dating application featuring matching algorithms and live chat.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span><span>React</span><span>WebSockets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-block">
+            <div class="glass contact-glass">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-text">I'm currently available for freelance work and full-time opportunities. Have a
+                    project in mind or want to say hi?</p>
+                <a href="https://wa.me/2348107552564?text=Hi%20Taiwo%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+                    target="_blank" class="primary-btn">Let's Chat on WhatsApp <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Taiwo Victor. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
