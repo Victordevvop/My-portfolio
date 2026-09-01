@@ -159,6 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 7. Scroll Reveal Animation Observer
     const revealElements = document.querySelectorAll('.reveal');
     if (revealElements.length > 0) {
+        // Immediately activate Hero / About section so top elements are never hidden
+        document.querySelectorAll('#about .reveal, #main-header .reveal').forEach(el => el.classList.add('active'));
+
         if ('IntersectionObserver' in window) {
             const revealObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -169,8 +172,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }, {
                 root: null,
-                rootMargin: '0px 0px -40px 0px',
-                threshold: 0.08
+                rootMargin: '0px 0px -10px 0px',
+                threshold: 0.01
             });
 
             revealElements.forEach(el => revealObserver.observe(el));
