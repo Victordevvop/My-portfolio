@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const groupCat = group.getAttribute('data-category');
                 if (category === 'all' || groupCat === category) {
                     group.style.display = 'block';
-                    group.style.animation = 'fadeInUp 0.4s ease forwards';
+                    group.classList.add('active');
                 } else {
                     group.style.display = 'none';
                 }
@@ -109,28 +109,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Projects Portfolio Category Filtering
+    // 5. Projects Category Filtering
     const projectTabBtns = document.querySelectorAll('#projects-tabs .project-tab-btn');
-    const projectCards = document.querySelectorAll('#projects-container .project-card');
+    const projectCards = document.querySelectorAll('.project-card');
 
-    projectTabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            projectTabBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+    if (projectTabBtns.length > 0 && projectCards.length > 0) {
+        projectTabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                projectTabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
 
-            const filter = btn.getAttribute('data-filter');
+                const filter = btn.getAttribute('data-filter');
 
-            projectCards.forEach(card => {
-                const cardCat = card.getAttribute('data-category');
-                if (filter === 'all' || cardCat === filter) {
-                    card.style.display = 'flex';
-                    card.style.animation = 'fadeInUp 0.4s ease forwards';
-                } else {
-                    card.style.display = 'none';
-                }
+                projectCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (filter === 'all' || cardCategory === filter) {
+                        card.style.display = 'flex';
+                        card.classList.add('active');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
             });
         });
-    });
+    }
 
     // 6. Active Nav Link Highlighting on Scroll
     const sections = document.querySelectorAll('section[id]');
